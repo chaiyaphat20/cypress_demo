@@ -14,11 +14,15 @@ describe('template spec', () => {
   })
 
   it('login success', function() {
+    login(userName,password)
+  });
+
+  function login(userName,password){
     cy.visit('https://acetoys.uk/our-story');
     cy.get('#LoginLink').click();
     cy.get('#username').type(userName);
     cy.get('#password').type(password);
     cy.get('.btn').click();
     cy.get('.btn').should('be.visible').contains('Logout')
-  });
+  }
 })
