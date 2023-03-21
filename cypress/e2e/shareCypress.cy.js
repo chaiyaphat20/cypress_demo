@@ -32,7 +32,7 @@ describe('template spec', () => {
     cy.get(':nth-child(1) > [style="position: relative"] > p > .btn').click()
     cy.get(':nth-child(3) > .btn-success').click()
     cy.get('.text-right > .btn').click()
-    cy.get('.display-3').should('be.visible').contains("Order complete!")
+    cy.get('.display-3').should('be.visible').contains("Order complete!")  //รอ 4 วิ ? ถ้าเน็ตช้าแล้วรอนาน เป็น 5 วิตรงนี้จะ error ไหม ?
   });
 
   function login(userName,password){
