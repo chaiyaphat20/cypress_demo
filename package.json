@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "cypress": "^12.8.1"
+  },
+  "scripts": {
+    "cypress:openSit":"cypress open --config-file cypressSit.config.js",
+    "cypress:openUat":"cypress open --config-file cypressUat.config.js"
+  }
+}
